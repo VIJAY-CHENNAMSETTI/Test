@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Selectors</title>
+    <link rel="stylesheet" href="./portfolio.css">
+    <script src="./portfolio.js" defer></script>
+</head>
+<body>
+    <div id="welcome" class="fixed-header">
+        <h2>Welcome To My Portfolio</h2>
+        <p>Hi, I'm <strong><u>Vijaya Siva Manikanta</u></strong>, a passionate B.Tech student and developer. Explore my projects, skills, and experience.</p>
+    </div>
+
+    <div class="Navbar">
+        <ul>
+            <li><a href="#" onclick="showWelcome()">Home</a></li>
+            <li><a href="#about" onclick="hideWelcome()">About</a></li>
+            <li><a href="#education" onclick="hideWelcome()">Education</a></li>
+            <li><a href="#projects" onclick="hideWelcome()">Projects</a></li>
+            <li><a href="#skills" onclick="hideWelcome()">Skills</a></li>
+            <li><a href="#contact" onclick="hideWelcome()">Contact</a></li>
+        </ul>
+    </div>
+
+    <div id="education" class="content">
+        <h2>Education</h2><hr>
+        <li>Vasavi Engineering College (B.Tech)</li><p>2023-2027 [Till-Date]</p><hr>
+        <li>Vidya Vikas Junior College (Intermediate)</li><p>2021-2023</p><hr>
+        <li>Vidya Vikas English Medium High School (SSC)</li><p>2020-2021</p>
+    </div>
+
+    <div id="contact" class="content">
+        <form class="contact-form" action="https://formsubmit.co/Vijaymanikanta1709@gmail.com" method="POST">
+            <h2>Contact Me</h2>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <input type="text" name="subject" placeholder="Subject" required>
+            <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+    <div id="projects" class="content">
+        <h2>Projects</h2><hr>
+        <h3>Voice-Base Authentication System (Using Python) :</h3>
+        <p>Voice-based authentication systems use unique vocal characteristics to verify identity, leveraging features such as pitch, tone, and speech patterns. These systems can be either text-dependent, requiring specific phrases, or text-independent, analyzing speech in general. They offer the convenience of not needing passwords and provide high security, as voice biometrics are difficult to replicate. However, challenges like background noise and health-related changes in voice can affect their accuracy. Your project using Python must have delved into these fascinating aspects, showcasing the blend of technology and human uniqueness in voice authentication.</p>
+    </div>
+
+    <div id="skills" class="content">
+        <h2>Skills</h2><hr>
+        <div class="list-class">
+            <h3>Technical Skills :</h3>
+            <li><strong>Programming Skills:</strong> C, Python, Java</li><br>
+            <li><strong>Web Development:</strong> HTML, CSS, JavaScript</li><br>
+            <li><strong>Database Management:</strong> SQL</li>
+            <hr>
+            <h3>Soft Skills:</h3>
+            <li>Time Management</li><br>
+            <li>Adaptability</li>
+        </div>
+    </div>
+
+    <div id="about" class="content">
+        <h2>About</h2><hr>
+        <h3>I am Vijaya Siva Manikanta</h3>
+        <p>I see every challenge as an opportunity, every bug as a lesson, and every line of code as a step toward something great. I'm Bhargav, a passionate coder who thrives on solving problems, optimizing performance, and turning ideas into reality. Whether it's a new framework, an unexpected bug, or an exciting project, I dive in headfirst, eager to learn, build, and innovate. I believe that growth comes from taking risks, experimenting with new technologies, and never settling for 'good enough.' Let's create something extraordinary together!</p>
+    </div>
+</body>
+</html>

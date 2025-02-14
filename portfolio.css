@@ -1,0 +1,126 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 1000; /* ensures it stays on top */
+    transition: opacity 0.5s ease, visibility 0.5s ease; /* fade-out effect */
+    opacity: 1;
+    visibility: visible;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.Navbar, .content {
+    margin-top: 0; /* Adjust as needed */
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Navbar {
+    background-color: black;
+    padding: 20px;
+    border-radius: 7px;
+    width: 100vw;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.content {
+    display: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border-radius: 9px;
+    width: 50%;
+    text-align:left;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content:target {
+    display: block;
+}
+
+body,html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100vw;
+    background: linear-gradient(180deg, #0000ff, #fffdd0);
+}
+
+hr {
+    background-color: black;
+}
+
+.list-class {
+    list-style-type: none;
+}
+
+.contact-form {
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    position: relative;
+}
+
+.contact-form h2 {
+    text-align: center;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 95%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.3);
+    outline: 0;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background:linear-gradient(to left, #0000ff, #fffdd0);
+}
